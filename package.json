@@ -1,0 +1,20 @@
+{
+  "name": "TestProjREA",
+  "version": "1.0.0",
+  "description": "test application for REA",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlirezaAsadi/sample-app-rea.git"
+  },
+  "author": "Alireza Asadi",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-sass": "^1.2.0"
+  },
+  "keywords": []
+}
