@@ -176,6 +176,63 @@ body {
 
 /* line 6, /Volumes/dev/projects/sample-app-rea/static/scss/_commons.scss */
 * {
-  color: #666; }
+  color: #666;
+  font-family: sans-serif; }
+
+/* line 1, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+.main-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: auto; }
+  /* line 7, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+  .main-wrapper .col-title {
+    background-color: #aaa;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    font-size: 150%;
+    margin: 10px;
+    color: #fff; }
+  /* line 17, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+  .main-wrapper .property-wrapper {
+    margin: 10px;
+    border: 1px solid #ddd;
+    background-color: #efefef; }
+    /* line 23, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+    .main-wrapper .property-wrapper h3 {
+      text-align: center;
+      padding: 0px 10px; }
+    /* line 28, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+    .main-wrapper .property-wrapper .property-price {
+      text-align: center;
+      padding: 10px; }
+    /* line 35, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+    .main-wrapper .property-wrapper .header img.agancy-logo {
+      max-height: 30px; }
+    /* line 40, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+    .main-wrapper .property-wrapper .property-img {
+      width: 100%; }
+    /* line 44, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+    .main-wrapper .property-wrapper .action {
+      display: none;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      margin-top: -40px;
+      height: 40px;
+      border: 1px solid #ddd;
+      font-weight: bold;
+      cursor: pointer; }
+      /* line 57, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+      .main-wrapper .property-wrapper .action.addProperty {
+        background: green; }
+      /* line 60, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+      .main-wrapper .property-wrapper .action.removeProperty {
+        background: red; }
+      /* line 64, /Volumes/dev/projects/sample-app-rea/static/scss/_index.scss */
+      .main-wrapper .property-wrapper .action.active {
+        display: block; }
 
 /*# sourceMappingURL=main.css.map */
