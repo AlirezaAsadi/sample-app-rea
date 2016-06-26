@@ -25,12 +25,11 @@ define(['jquery', 'angular','app'], function($, angular, app){
 		  Add property method
 		\************************/
 		$scope.addProperty = function(property){
-			var alreadyExist = false;
 			// Check if property already added to the savedProperties
-			$scope.savedProperties.find(function(el ,i){
-				if (el.id == property.id){
+			var alreadyExist = false;
+			var existProperty = $.map($scope.savedProperties, function(el){
+				if(el.id == property.id)
 					alreadyExist = true;
-				}
 			});
 			
 			if(!alreadyExist)
@@ -43,10 +42,8 @@ define(['jquery', 'angular','app'], function($, angular, app){
 		\************************/
 		$scope.removeProperty = function(property){
 			// Remove property if exists in the savedProperty list
-			$scope.savedProperties.find(function(el ,i){
-				if (el.id == property.id){
-					$scope.savedProperties.splice(i, 1);
-				}
+			$scope.savedProperties = $.grep($scope.savedProperties, function(el){
+				return (el.id != property.id);
 			});
 		};
 		
