@@ -3,10 +3,11 @@ var require={
     baseUrl: "/js",
     paths: {
         // Main app for angular
-        app: 'modules/app',
+        app:         'modules/app',
         
-        // Mapping angular file
-        angular:              'vendors/angular.min'
+        // Mapping angular/jquery file
+        angular:     'vendors/angular.min',
+        jquery:      'vendors/jquery-3.0.0.min'
     },
     shim: {
         angular: {
