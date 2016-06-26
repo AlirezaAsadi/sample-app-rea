@@ -1,0 +1,17 @@
+{
+  "name": "TestProjREAServer",
+  "description": "test application for REA",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlirezaAsadi/sample-app-rea.git"
+  },
+  "author": "Alireza Asadi",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.13.4",
+    "mustache-express": "^1.2.2"
+  }
+}
