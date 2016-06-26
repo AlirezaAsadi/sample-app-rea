@@ -53,7 +53,9 @@
 
         jshint: {
             files: [
-                  'Gruntfile.js'
+                  'Gruntfile.js',
+                  'static/js/modules/*.js',
+                  'static/js/modules/index/*.js'
                  ],
              options: {
                 loopfunc: true,
