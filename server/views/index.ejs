@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>REA App Index Page</title>
+    <meta name="description" content="This is a index template">
+    <meta name="author" content="Alireza Asadi">
+
+    <!-- styles -->
+    <link href="/css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body id="body">
+    
+    <section class="main-wrapper">
+      <div class="row" ng-controller="propertyCtl">
+        
+        <div class="col large-6">
+          
+          <div class="col-title">All Properties</div>
+          
+          <!-- Property Wrapper -->
+          <div class="property-wrapper" ng-repeat="property in allProperties">
+            <div class="header" ng-style="{'background-color': property.agency.brandingColors.primary}">
+              <img class="agancy-logo" ng-src="{{ property.agency.logo }}">
+            </div>
+            <h3>ID: {{ property.id }}</h3>
+            <img class="property-img" ng-src="{{ property.mainImage }}" />
+            <button class="action addProperty" ng-click="addProperty(property)">Add property</button>
+            <div class="property-price">{{ property.price }}</div>
+          </div>
+          
+        </div>
+        
+        
+        <div class="col large-6">
+          
+          <div class="col-title">Saved Properties</div>
+          
+          <!-- Property Wrapper -->
+          <div class="property-wrapper" ng-repeat="property in savedProperties">
+            <div class="header" ng-style="{'background-color': property.agency.brandingColors.primary}">
+              <img class="agancy-logo" ng-src="{{ property.agency.logo }}">
+            </div>
+            <h3>ID: {{ property.id }}</h3>
+            <img class="property-img" ng-src="{{ property.mainImage }}" />
+            <button class="action removeProperty" ng-click="removeProperty(property)">Remove property</button>
+            <div class="property-price">{{ property.price }}</div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- Scripts-->
+    <script  type="text/javascript" src="/js/config.js"></script>
+    <script  type="text/javascript" data-main="modules/index/init" src="/js/vendors/require.js"></script>
+  
+  </body>
+</html>  
