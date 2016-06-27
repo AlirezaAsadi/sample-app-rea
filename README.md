@@ -1,3 +1,6 @@
 # sample-app-rea
 
-Run server 
+Please run the server first :
+
+#cd server
+#node app.js
