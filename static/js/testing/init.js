@@ -1,4 +1,4 @@
-define(['angular','app','modules/index/init', 'jasmine', 'jasmine_html', 'jasmine_boot', 'angular_moack'], function(angular, app, moack){
+define(['angular','app', 'angular_moack','modules/index/init'], function(angular, app, moack){
     beforeEach(angular.mock.module("rea-sample-app"))
 
     describe('propertyCtl', function() {
